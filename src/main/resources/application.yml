@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+spring:
+  datasource:
+    username: user01
+    password: zhanG@123
+    url: jdbc:mysql://139.198.168.159:3309/activiti7?characterEncoding=UTF8&useSSL=true&severTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  activiti:
+    history-level: full
+    db-history-used: true
+    check-process-definitions: false
+#  devtools:
+#    restart:
+#      enabled: true  #设置开启热部署
+#    activiti:
+#      database-schema-update: true
+#      history-level: full
+#      db-history-used: true
+#activiti7历史表创建
+
+
+#debug: true
