@@ -2,24 +2,23 @@ server:
   port: 8080
   servlet:
     context-path: /
+    session:
+      timeout: 9000
 spring:
   datasource:
     username: user01
     password: zhanG@123
-    url: jdbc:mysql://139.198.168.159:3309/activiti7?characterEncoding=UTF8&useSSL=true&severTimezone=UTC
+    url: jdbc:mysql://139.198.168.159:3309/activiti7?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC&nullCatalogMeansCurrent=true
     driver-class-name: com.mysql.cj.jdbc.Driver
-  activiti:
-    history-level: full
-    db-history-used: true
-    check-process-definitions: false
-#  devtools:
-#    restart:
-#      enabled: true  #设置开启热部署
-#    activiti:
-#      database-schema-update: true
-#      history-level: full
-#      db-history-used: true
-#activiti7历史表创建
+    #日志的相关配置
+logging:
+  level:
+    root: info
+#日志的相关配置
+spring.activiti.history-level: full
+spring.activiti.db-history-used: true
+# spring-activiti
+# 自动部署验证设置:true-开启（默认）、false-关闭
+spring.activiti.check-process-definitions: false
 
 
-#debug: true

@@ -7,6 +7,11 @@ package com.zhang.util;
  */
 public class GlobalConfig {
     public static final Boolean Test = true;
+    //windows路径
+    public static final String BPMN_PathMapping = "file:D:\\Projects\\demo_activiti\\src\\main\\resources\\resources\\bpmn\\";
+
+    //Liunx路径
+    //public static final String BPMN_PathMapping = "file:/root/Activiti/";
     public enum ResponseCode{
         SUCCESS(0,"成功"),
         ERROR(1,"失败");
