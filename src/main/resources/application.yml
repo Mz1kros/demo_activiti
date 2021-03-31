@@ -6,9 +6,9 @@ server:
       timeout: 9000
 spring:
   datasource:
-    username: user01
-    password: zhanG@123
-    url: jdbc:mysql://139.198.168.159:3309/activiti7?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC&nullCatalogMeansCurrent=true
+    username: xxxxx
+    password: xxxx
+    url: jdbc:mysql://xxxxx:3309/activiti7?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC&nullCatalogMeansCurrent=true
     driver-class-name: com.mysql.cj.jdbc.Driver
     #日志的相关配置
 logging:
